@@ -1,0 +1,20 @@
+[0m[[0m[31merror[0m] [0m[0m/home/estudiantes/juan.giraldo49/IdeaProjects/dojoScala/src/main/scala/main.scala:21:42: value dispatcher is not a member of object System[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val executionContext = System.dispatcher[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/estudiantes/juan.giraldo49/IdeaProjects/dojoScala/src/main/scala/main.scala:25:36: not found: type student[0m
+[0m[[0m[31merror[0m] [0m[0m  case class Course(students: List[student], name:String, id:String)[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/estudiantes/juan.giraldo49/IdeaProjects/dojoScala/src/main/scala/main.scala:60:81: Cannot find an implicit ExecutionContext. You might pass[0m
+[0m[[0m[31merror[0m] [0m[0man (implicit ec: ExecutionContext) parameter to your method[0m
+[0m[[0m[31merror[0m] [0m[0mor import scala.concurrent.ExecutionContext.Implicits.global.[0m
+[0m[[0m[31merror[0m] [0m[0m    def fetchStudents(courseId: String): Future[Option[List[Student]]] = Future {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/estudiantes/juan.giraldo49/IdeaProjects/dojoScala/src/main/scala/main.scala:76:20: not found: value Neno[0m
+[0m[[0m[31merror[0m] [0m[0m              case Neno => complete(StatusCodes.NotFound)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/estudiantes/juan.giraldo49/IdeaProjects/dojoScala/src/main/scala/main.scala:84:23: Cannot find an implicit ExecutionContext. You might pass[0m
+[0m[[0m[31merror[0m] [0m[0man (implicit ec: ExecutionContext) parameter to your method[0m
+[0m[[0m[31merror[0m] [0m[0mor import scala.concurrent.ExecutionContext.Implicits.global.[0m
+[0m[[0m[31merror[0m] [0m[0m    bindFuture.flatMap(_.unbind()).onComplete(_ => system.terminate())[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
